@@ -1,9 +1,12 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const logger = require('morgan');
 
 dotenv.config();
 
 const app = express();
+
+app.use(logger('dev'));
 
 app.use('/', (req, res) => {
   res.send({

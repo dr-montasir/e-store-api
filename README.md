@@ -28,11 +28,11 @@
 
 #### <u>Features</u>
 
-* JWT Authentication
-* super-admin control
-* handling errors
-* internationalization i18n (for response message)
-* model field translation (for the content stored in the database)
+- JWT Authentication
+- super-admin control
+- handling errors
+- internationalization i18n (for response message)
+- model field translation (for the content stored in the database)
 
 #### <u>Project comments</u>
 
@@ -40,14 +40,14 @@ Each comment has a headline related to a specific programming concept or unit. C
 
 ##### Comment No. 1: Project Initialization
 
-* **npm**
+- **npm**
 
   ```shell
   npm i express dotenv
   npm -D i nodemon
   ```
 
-* **Project Structure**
+- **Project Structure**
 
   ```shell
   e-store-api
@@ -63,7 +63,7 @@ Each comment has a headline related to a specific programming concept or unit. C
   └── server.js
   ```
 
-* **Changes**
+- **Changes**
 
   ```shell
           new file:   .gitignore
@@ -74,8 +74,46 @@ Each comment has a headline related to a specific programming concept or unit. C
           new file:   server.js
   ```
 
-* **Result**
+- **Result**
 
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
-  comment no. 1  https://youtu.be/fuofr7P7izk
+  comment no. 1 https://youtu.be/fuofr7P7izk
+
+##### Comment No. 2: HTTP request logger middleware
+
+- **npm**
+
+  ```shell
+  npm i morgan
+  ```
+  
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+          modified:   README.md
+          modified:   package.json
+          modified:   server.js
+  ```
+  
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 2: https://www.youtube.com/watch?v=YWTOyrTDB-I
