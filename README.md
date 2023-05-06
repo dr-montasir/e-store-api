@@ -87,22 +87,6 @@ Each comment has a headline related to a specific programming concept or unit. C
   ```shell
   npm i morgan
   ```
-  
-- **Project Structure**
-
-  ```shell
-  e-store-api
-  .
-  ├── node_modules
-  ├── .env
-  ├── .gitignore
-  ├── example.env
-  ├── LICENCE
-  ├── package.json
-  ├── package-lock.json
-  ├── README.md
-  └── server.js
-  ```
 
 - **Changes**
 
@@ -111,9 +95,23 @@ Each comment has a headline related to a specific programming concept or unit. C
           modified:   package.json
           modified:   server.js
   ```
-  
+
 - **Result**
 
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 2: https://www.youtube.com/watch?v=YWTOyrTDB-I
+
+##### Comment No. 3: Railway cloud. Database hosting, and Project deployment
+
+- **Changes**
+
+  ```shell
+          modified:   README.md
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 3: https://www.youtube.com/watch?v=EPCV6lNvCQM
