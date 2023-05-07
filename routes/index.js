@@ -1,5 +1,7 @@
 const express = require('express');
-const nm = require('native_math');
+
+// controllers
+const { index } = require('../controllers');
 
 const router = express.Router();
 
@@ -10,17 +12,6 @@ const router = express.Router();
  * @route '/' or '/api' or '/api/v1'
  * @description Index Route
  */
-router.get('/', (req, res) => {
-  let angle = nm.rib(0, 30);
-
-  res.send({
-    message: '👋',
-    angle,
-    sine_angle: nm.sin.deg(angle),
-    array: nm.range(-5, angle, 5),
-    sine_array: nm.sin.deg(nm.range(-5, angle, 5)),
-    subt: `100 - 99.9 = ${nm.subt(100, 99.9)}`,
-  });
-});
+router.get('/', index);
 
 module.exports = router;

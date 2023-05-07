@@ -194,3 +194,39 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 7: https://www.youtube.com/watch?v=OOvhJ67LTd0
+
+##### **Comment No. 8: Controllers Setup**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── controllers
+  │   └── index.js
+  ├── node_modules
+  ├── routes
+  │   └── index.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+          modified:   README.md
+          modified:   routes/index.js
+          new file:   controllers/index.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 8: https://www.youtube.com/watch?v=515IICGLoO0
