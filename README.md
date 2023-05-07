@@ -78,7 +78,7 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
-  comment no. 1 https://youtu.be/fuofr7P7izk
+  comment no. 1: https://youtu.be/fuofr7P7izk
 
 ##### Comment No. 2: HTTP request logger middleware
 
@@ -129,3 +129,40 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 4: https://www.youtube.com/watch?v=1r2VhUIYChU
+
+##### Comment No. 5: Routes Setup
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── routes
+  │   └── index.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+          modified:   README.md
+          modified:   example.env
+          modified:   server.js
+          new file:   routes/index.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 5: https://www.youtube.com/watch?v=_W6oOWauQa8
+
+##### 
