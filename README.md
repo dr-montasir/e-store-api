@@ -178,3 +178,19 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 6: https://www.youtube.com/watch?v=_2bdi2X0Xl0
+
+##### **Comment No. 7: Native Math Package**
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   package.json
+        modified:   routes/index.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 7: https://www.youtube.com/watch?v=OOvhJ67LTd0
