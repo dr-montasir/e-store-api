@@ -38,7 +38,7 @@
 
 Each comment has a headline related to a specific programming concept or unit. Changes in the project build, such as additions, modifications, and deletions, can be followed by referring to the specified comment through the project link on GitHub.
 
-##### Comment No. 1: Project Initialization
+##### **Comment No. 1: Project Initialization**
 
 - **npm**
 
@@ -80,7 +80,7 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   comment no. 1: https://youtu.be/fuofr7P7izk
 
-##### Comment No. 2: HTTP request logger middleware
+##### **Comment No. 2: HTTP request logger middleware**
 
 - **npm**
 
@@ -102,7 +102,7 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   comment no. 2: https://www.youtube.com/watch?v=YWTOyrTDB-I
 
-##### Comment No. 3: Railway cloud. Database hosting, and Project deployment
+##### **Comment No. 3: Railway cloud. Database hosting, and Project deployment**
 
 - **Changes**
 
@@ -116,7 +116,7 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   comment no. 3: https://www.youtube.com/watch?v=EPCV6lNvCQM
 
-##### Comment No. 4: Thunder Client. Testing in Production
+##### **Comment No. 4: Thunder Client. Testing in Production**
 
 - **Changes**
 
@@ -130,7 +130,7 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   comment no. 4: https://www.youtube.com/watch?v=1r2VhUIYChU
 
-##### Comment No. 5: Routes Setup
+##### **Comment No. 5: Routes Setup**
 
 - **Project Structure**
 
@@ -165,4 +165,16 @@ Each comment has a headline related to a specific programming concept or unit. C
 
   comment no. 5: https://www.youtube.com/watch?v=_W6oOWauQa8
 
-##### 
+##### **Comment No. 6: Railway cloud. Environment Variables**
+
+- **Changes**
+
+  ```shell
+          modified:   README.md
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 6: https://www.youtube.com/watch?v=_2bdi2X0Xl0
