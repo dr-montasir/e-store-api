@@ -270,3 +270,42 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 9: https://www.youtube.com/watch?v=IDanDNsMaaY
+
+##### **Comment No. 10: The Start Folder**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── sources
+  │   ├── controllers
+  │   │   └── index.js
+  │   └── routes
+  │       └── index.js
+  └── start
+  │   └── app.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   server.js
+        new file:   start/app.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 10: https://www.youtube.com/watch?v=OroYPsCVjGI
