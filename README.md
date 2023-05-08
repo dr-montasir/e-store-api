@@ -230,3 +230,43 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 8: https://www.youtube.com/watch?v=515IICGLoO0
+
+##### **Comment No. 9: Sources Folder**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── sources
+  │   ├── controllers
+  │   │   └── index.js
+  │   └── routes
+  │       └── index.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        deleted:    controllers/index.js
+        deleted:    routes/index.js
+        modified:   server.js
+        new file:   sources/controllers/index.js
+        new file:   sources/routes/index.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 9: https://www.youtube.com/watch?v=IDanDNsMaaY

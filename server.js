@@ -11,7 +11,7 @@ const app = express();
 
 // middlewares
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname, 'routes')));
+app.use(express.static(path.join(__dirname, './sources/routes')));
 
 // routes
 const apiPrefix = process.env.API_PREFIX || '/';
@@ -24,7 +24,7 @@ if (apiPrefix !== '/') {
   });
 }
 
-const routesDir = './routes';
+const routesDir = './sources/routes';
 
 readdirSync(routesDir).map((route) => {
   if (path.parse(route).name === 'index') {
@@ -33,7 +33,7 @@ readdirSync(routesDir).map((route) => {
     route = path.parse(route).name;
   }
 
-  app.use(`${apiPrefix}/${route}`, require(`./routes/${route}`));
+  app.use(`${apiPrefix}/${route}`, require(`./sources/routes/${route}`));
 });
 
 // Port
