@@ -5,7 +5,7 @@ const path = require('path');
 const logger = require('morgan');
 
 // config
-dotenv.config();
+const config = require('./config');
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, '../sources/routes')));
 
 // routes
-const apiPrefix = process.env.API_PREFIX || '/';
+const apiPrefix = config.ApiPrefix || '/';
 
 if (apiPrefix !== '/') {
   app.get('/', (req, res) => {
@@ -37,7 +37,7 @@ readdirSync(routesDir).map((route) => {
 });
 
 // Port
-const port = process.env.PORT || 1400;
+const port = config.Port || 1400;
 
 app.listen(port, () => {
   console.log(`🟢 Server running on port ${port}`);

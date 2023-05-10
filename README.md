@@ -284,7 +284,7 @@ Each comment has a headline related to a specific programming concept or unit. C
   │   │   └── index.js
   │   └── routes
   │       └── index.js
-  └── start
+  ├── start
   │   └── app.js
   ├── .env
   ├── .gitignore
@@ -309,3 +309,43 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 10: https://www.youtube.com/watch?v=OroYPsCVjGI
+
+##### **Comment No. 11: Configuration File**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── sources
+  │   ├── controllers
+  │   │   └── index.js
+  │   └── routes
+  │       └── index.js
+  ├── start
+  │   ├── app.js
+  │   └── config.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   start/app.js
+        new file:   start/config.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 11: https://www.youtube.com/watch?v=ma92qSEl4qY
