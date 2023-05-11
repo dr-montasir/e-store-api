@@ -349,3 +349,47 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 11: https://www.youtube.com/watch?v=ma92qSEl4qY
+
+##### **Comment No. 12: Database Setup**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── sources
+  │   ├── controllers
+  │   │   └── index.js
+  │   └── routes
+  │       └── index.js
+  ├── start
+  │   ├── app.js
+  │   ├── config.js
+  │   └── db.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   example.env
+        modified:   package.json
+        modified:   start/app.js
+        modified:   start/config.js
+        new file:   start/db.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 12: https://www.youtube.com/watch?v=USV6NKNC37k

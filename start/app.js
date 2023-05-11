@@ -1,11 +1,13 @@
 const { readdirSync } = require('fs');
 const express = require('express');
-const dotenv = require('dotenv');
 const path = require('path');
 const logger = require('morgan');
 
 // config
 const config = require('./config');
+
+// db
+require('./db');
 
 const app = express();
 
@@ -36,9 +38,25 @@ readdirSync(routesDir).map((route) => {
   app.use(`${apiPrefix}/${route}`, require(`../sources/routes/${route}`));
 });
 
+// server mode
+const mode = config.Mode;
+
 // Port
 const port = config.Port || 1400;
 
 app.listen(port, () => {
-  console.log(`🟢 Server running on port ${port}`);
+  console.log(
+    `\n🔥${'='.repeat(33)}🔥\n${' '.repeat(
+      3
+    )}🟢 Server running on port :${port}`
+  );
+  switch (mode) {
+    case 'development':
+      console.log(`${' '.repeat(3)}📺 Watch: http://localhost:${port}`);
+      break;
+
+    default:
+      console.log(`${' '.repeat(3)}🌐 Server Mode: ${mode}`);
+      break;
+  }
 });
