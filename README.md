@@ -435,3 +435,18 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 13: https://www.youtube.com/watch?v=1IdwRYpxb_Q
+
+#### **Comment No. 14: User Schema**
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   sources/models/User.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 14: https://www.youtube.com/watch?v=yeahyw3rTHg
