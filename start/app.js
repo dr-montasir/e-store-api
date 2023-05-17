@@ -2,6 +2,7 @@ const { readdirSync } = require('fs');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
+const bodyParser = require('body-parser');
 
 // config
 const config = require('./config');
@@ -13,6 +14,8 @@ const app = express();
 
 // middlewares
 app.use(logger('dev'));
+// for parsing application/json
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../sources/routes')));
 
 // routes

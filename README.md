@@ -450,3 +450,56 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 14: https://www.youtube.com/watch?v=yeahyw3rTHg
+
+#### **Comment No. 15: New User Registration**
+
+- **npm**
+
+  ```shell
+  npm i body-parser
+  ```
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── sources
+  │   ├── controllers
+  │   │   ├── index.js
+  │   │   └── users.js
+  │   ├── models
+  │   │   └── User.js
+  │   └── routes
+  │       ├── index.js
+  │       └── users.js
+  ├── start
+  │   ├── app.js
+  │   ├── config.js
+  │   └── db.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   package.json
+        modified:   start/app.js
+        new file:   sources/controllers/users.js
+        new file:   sources/routes/users.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 15: https://www.youtube.com/watch?v=Yq-F-zV2S7g
