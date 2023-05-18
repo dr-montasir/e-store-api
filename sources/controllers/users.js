@@ -1,3 +1,6 @@
+// node_modules
+const bcrypt = require('bcryptjs');
+
 // Models
 const User = require('../models/User');
 
@@ -36,10 +39,13 @@ const register = async (req, res) => {
       });
     } else {
       const users = await User.find({});
+
+      const hashedPassword = await bcrypt.hash(password, 10);
+
       const user = new User(
         users.length === 0
-          ? { name, email, password, role: 'superadmin' }
-          : req.body
+          ? { name, email, password: hashedPassword, role: 'superadmin' }
+          : ((req.body.password = hashedPassword), req.body)
       );
       await user.save();
       res.status(201).send({

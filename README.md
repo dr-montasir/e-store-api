@@ -519,3 +519,25 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 16: https://www.youtube.com/watch?v=BtCMJHHyl6o
+
+#### **Comment No. 17: Hashed Password**
+
+- **npm**
+
+  ```shell
+  npm i bcryptjs
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   package.json
+        modified:   sources/controllers/users.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 17: https://www.youtube.com/watch?v=RYahrhdENAQ
