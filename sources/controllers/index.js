@@ -12,7 +12,7 @@ const nm = require('native_math');
 const index = (req, res) => {
   let angle = nm.rib(0, 30);
 
-  res.send({
+  res.status(200).send({
     message: '👋',
     angle,
     sine_angle: nm.sin.deg(angle),

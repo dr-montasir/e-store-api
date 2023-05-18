@@ -503,3 +503,19 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 15: https://www.youtube.com/watch?v=Yq-F-zV2S7g
+
+#### **Comment No. 16: HTTP status codes**
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   sources/controllers/index.js
+        modified:   sources/controllers/users.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 16: https://www.youtube.com/watch?v=BtCMJHHyl6o
