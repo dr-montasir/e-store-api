@@ -18,6 +18,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../sources/routes')));
 
+// Serve Static Assets
+app.use(express.static('public'));
+
+// Documents
+app.get('/docs', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/docs.html'));
+});
+
 // routes
 const apiPrefix = config.ApiPrefix || '/';
 
