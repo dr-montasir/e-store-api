@@ -62,4 +62,44 @@ const register = async (req, res) => {
   }
 };
 
-module.exports = { register };
+/**
+ * @name login
+ * @param {*} req
+ * @param {*} res
+ * @method POST
+ * @access Public
+ * @route '/users/login'
+ * @description login user
+ */
+const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const userExists = await User.findOne({ email });
+
+    if (!userExists) {
+      res.status(404).send({
+        message: 'User does not exist',
+      });
+    } else {
+      const passwordMatch = await bcrypt.compare(password, userExists.password);
+
+      if (!passwordMatch) {
+        res.status(406).send({
+          message: 'Incorrect password',
+        });
+      } else {
+        res.status(200).json({
+          success: true,
+          message: 'User logged successfully',
+        });
+      }
+    }
+  } catch (error) {
+    res.status(417).send({
+      message: 'Login failed',
+      reason: error.message,
+    });
+  }
+};
+
+module.exports = { register, login };
