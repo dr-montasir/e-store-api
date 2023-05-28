@@ -1,5 +1,9 @@
 // node_modules
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
+// config
+const config = require('../../start/config');
 
 // Models
 const User = require('../models/User');
@@ -88,9 +92,16 @@ const login = async (req, res) => {
           message: 'Incorrect password',
         });
       } else {
+        const token = jwt.sign(
+          { userId: userExists._id },
+          config.JWTSecretKey,
+          { expiresIn: '10d' }
+        );
+
         res.status(200).json({
           success: true,
           message: 'User logged successfully',
+          data: token,
         });
       }
     }

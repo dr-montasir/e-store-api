@@ -605,3 +605,27 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 19: https://www.youtube.com/watch?v=pB-uZ4TsDFk
+
+#### **Comment No. 20: JWT Json Web Token**
+
+- **npm**
+
+  ```shell
+  npm i jsonwebtoken
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   example.env
+        modified:   package.json
+        modified:   sources/controllers/users.js
+        modified:   start/config.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 20: https://www.youtube.com/watch?v=KvAaCTZIE0s

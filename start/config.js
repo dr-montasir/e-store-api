@@ -10,6 +10,7 @@ const config = {
   Db: {
     Uri: env.DB_URI || 'mongodb://localhost:27017/e-store-api',
   },
+  JWTSecretKey: env.JWT_SECRET_KEY,
 };
 
 module.exports = config;
