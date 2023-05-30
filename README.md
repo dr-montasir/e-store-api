@@ -629,3 +629,52 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 20: https://www.youtube.com/watch?v=KvAaCTZIE0s
+
+#### **Comment No. 21: Middlewares: isAuthRole function**
+
+- **Project Structure**
+
+  ```shell
+  e-store-api
+  .
+  ├── node_modules
+  ├── public
+  │   └── docs.html
+  ├── sources
+  │   ├── controllers
+  │   │   ├── index.js
+  │   │   └── users.js
+  │   ├── middlewares
+  │   │   └── auth
+  │   │       └── index.js
+  │   ├── models
+  │   │   └── User.js
+  │   └── routes
+  │       ├── index.js
+  │       └── users.js
+  ├── start
+  │   ├── app.js
+  │   ├── config.js
+  │   └── db.js
+  ├── .env
+  ├── .gitignore
+  ├── example.env
+  ├── LICENCE
+  ├── package.json
+  ├── package-lock.json
+  ├── README.md
+  └── server.js
+  ```
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        new file:   sources/middlewares/auth/index.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 21: https://www.youtube.com/watch?v=3_IZB8OcGeM
