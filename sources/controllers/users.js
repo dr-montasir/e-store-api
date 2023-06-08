@@ -113,4 +113,38 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { register, login };
+/**
+ * @name getUserProfile
+ * @param {*} req
+ * @param {*} res
+ * @param {*} next
+ * @method POST
+ * @access Authorized
+ * @roles ['user', 'admin', 'superadmin']
+ * @route '/users/profile'
+ * @description get user profile by token
+ */
+const getUserProfile = async (req, res) => {
+  try {
+    // https://jwt.io
+    // {
+    //   "userId": "63daae903529c75e8726e9dc",
+    //   "iat": 1676491819,
+    //   "exp": 1677355819
+    // }
+    const user = await User.findById(req.body.userId);
+
+    res.status(200).send({
+      success: true,
+      message: 'User profile fetched successfully',
+      data: user,
+    });
+  } catch (error) {
+    res.status(417).send({
+      message: 'Fail to fetch user profile',
+      reason: error.message,
+    });
+  }
+};
+
+module.exports = { register, login, getUserProfile };

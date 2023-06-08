@@ -5,7 +5,10 @@ const express = require('express');
 const router = express.Router();
 
 // controllers
-const { register, login } = require('../controllers/users');
+const { register, login, getUserProfile } = require('../controllers/users');
+
+// middlewares (sources => middlewares)
+const { isAuthRole } = require('../middlewares/auth');
 
 /**
  * @name register
@@ -24,5 +27,19 @@ router.post('/register', register);
  * @description login user
  */
 router.post('/login', login);
+
+/**
+ * @name getUserProfile
+ * @method POST
+ * @access Authorized
+ * @roles ['user', 'admin', 'superadmin']
+ * @route '/users/profile'
+ * @description get user profile by id
+ */
+router.post(
+  '/profile',
+  isAuthRole('user', 'admin', 'superadmin'),
+  getUserProfile
+);
 
 module.exports = router;

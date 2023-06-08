@@ -678,3 +678,19 @@ Each comment has a headline related to a specific programming concept or unit. C
   Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
 
   comment no. 21: https://www.youtube.com/watch?v=3_IZB8OcGeM
+
+#### **Comment No. 22: Get User Profile [private route]**
+
+- **Changes**
+
+  ```shell
+        modified:   README.md
+        modified:   sources/controllers/users.js
+        modified:   sources/routes/users.js
+  ```
+
+- **Result**
+
+  Playlist: https://youtube.com/playlist?list=PLoqJtXvBJ39S-sFs6rVrbbQRfI8o9j4tz
+
+  comment no. 22: https://www.youtube.com/watch?v=VZaV3SNKpmo
